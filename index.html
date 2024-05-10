@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta tasg PWA -->
+    <meta name="theme-color" content="#333333" />
+
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <!-- Icons -->
+    <link rel="shortcut icon" href="./favicon.png" type="image/png" />
+
+    <link rel="apple-touch-icon" href="./favicon.png" type="image/png" />
+    <link
+      rel="apple-touch-startup-image"
+      href="./favicon.png"
+      type="image/png"
+    />
+
+    <!-- Manifest -->
+    <link rel="manifest" href="./manifest.json" />
+
+    <!-- Title -->
+    <title>React CDN</title>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel" src="./components/Contador.js"></script>
+    <!-- Se declara el nombre del archivo con mayusuculas por que se va a crear un componente, es un estandar-->
+    <script type="text/babel" src="./index.js"></script>
+
+    <!-- Para progresive web apps -->
+    <script src="./register.js"></script>
+  </body>
+</html>
